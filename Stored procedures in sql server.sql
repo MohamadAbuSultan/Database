@@ -1,3 +1,13 @@
+Select * From tblEmployee
+
+Execute spGetEmployees
+
+Create Procedure spGetEmployees
+As
+Begin
+Select Gender,DepartmentId From tblEmployee
+End
+
 -- A stored procedure is group of T-SQL (Transact SQL) statements. If you have a situation, where
 -- you write the same query over and over again, you can save that specific query as a stored
 -- procedure and call it just by it's name.
